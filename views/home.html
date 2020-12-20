@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="./css/scroll.css">
 </head>
 <body>
+<form method="post" action ="home">
+    <div name ="result">
+
+        {{range .RPCResult}}
+            {{ .Id}}
+        {{end}}
+    </div>
+</form>
 <div id="scrollDiv" >
     <ul>
         <li>百度 www.baidu.com</li>

@@ -1,5 +1,7 @@
 package models
 
 type RPCResult struct {
-	Result interface{} 	`json:"result"`
+	Result interface{} 	`from:"result"`
 }
+
+
