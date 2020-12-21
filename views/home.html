@@ -11,17 +11,15 @@
 </head>
 <body>
 <form method="post" action ="home">
-    <div name ="result">
-
-        {{range .RPCResult}}
-            {{ .Id}}
-        {{end}}
+    <button type="submit">登录</button>
+    <div name ="result" >
+            {{.result}}
     </div>
 </form>
 <div id="scrollDiv" >
     <ul>
-        <li>百度 www.baidu.com</li>
-        <li>脚本之家 www.jb51.net</li>
+        <li>思安而年 https://xydh.fun/Sianernian</li>
+        <li>你好啊！</li>
         <li>这是公告标题的第三行</li>
         <li>这是公告标题的第四行</li>
         <li>这是公告标题的第五行</li>
@@ -32,37 +30,34 @@
 </div>
 
 
-
-
-
-{{/*<div id="div1">*/}}
-{{/*    <h3>Blockchain</h3>*/}}
-{{/*    <ul>*/}}
-{{/*        <li>getbestblockhash</li>*/}}
-{{/*        <li>getbestblock</li>*/}}
-{{/*        <li>getblockchaininfo</li>*/}}
-{{/*        <li>getblockcount</li>*/}}
-{{/*        <li>getbessthash</li>*/}}
-{{/*        <li>getblockhash + height</li>*/}}
-{{/*        <li>getdifficulty</li>*/}}
-{{/*        <li>getchaintips</li>*/}}
-{{/*        <li>getaddressinfo</li>*/}}
-{{/*    </ul>*/}}
-{{/*    <h3>Control</h3>*/}}
-{{/*    <ul>*/}}
-{{/*        <li>help</li>*/}}
-{{/*        <li>stop</li>*/}}
-{{/*        <li>uptime</li>*/}}
-{{/*    </ul>*/}}
-{{/*    <h3>Network</h3>*/}}
-{{/*    <ul>*/}}
-{{/*        <li>ping</li>*/}}
-{{/*    </ul>*/}}
-{{/*    <h3>Wallet</h3>*/}}
-{{/*    <ul>*/}}
-{{/*        <li>getbalance</li>*/}}
-{{/*        <li>getbalances</li>*/}}
-{{/*    </ul>*/}}
-{{/*</div>*/}}
+<div id="div1">
+    <h3>Blockchain</h3>
+    <ul> 
+        <li>getbestblockhash</li>
+        <li>getbestblock</li>
+        <li>getblockchaininfo</li>
+        <li>getblockcount</li>
+        <li>getbessthash</li>
+        <li>getblockhash + height</li>
+        <li>getdifficulty</li>
+        <li>getchaintips</li>
+        <li>getaddressinfo</li>
+    </ul>
+    <h3>Control</h3>
+    <ul>
+        <li>help</li>
+        <li>stop</li>
+        <li>uptime</li>
+    </ul>
+    <h3>Network</h3>
+    <ul>
+        <li>ping</li>
+    </ul>
+    <h3>Wallet</h3>
+    <ul>
+        <li>getbalance</li>
+        <li>getbalances</li>
+    </ul>
+</div>
 </body>
 </html>
