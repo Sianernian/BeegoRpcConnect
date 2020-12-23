@@ -20,7 +20,9 @@ func (c *MainController)Get(){
 }
 
 func (c *MainController) Post() {
-	JsonData := models.PraPareJson("getblockhash",1)
+
+	//method :=models.Method{}
+	JsonData := models.PraPareJson("getbestblockhash")
 	DataString := models.ClienCount(JsonData)
 
 	Code := DataString.StatusCode;
@@ -35,17 +37,13 @@ func (c *MainController) Post() {
 			log.Fatal(err.Error())
 		}
 		fmt.Println(f.Result)
-		fmt.Println(f)
-		c.Data["result"]= f
+
+		c.Data["result"]= f.Result
 	//	c.ServeJSON()
 		c.TplName = "home.html"
 	} else {
+
 		fmt.Println("请求失败")
 	}
 
 }
-
-//func (c *MainController)Post() {
-//	//解析数据
-//
-//}

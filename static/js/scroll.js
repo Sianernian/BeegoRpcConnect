@@ -37,6 +37,6 @@ $(document).ready(function() {
     $("#scrollDiv").Scroll({
         line: 4,
         speed: 500,
-        timer: 1000
+        timer: 3000
     });
 });
